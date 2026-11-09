@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "RLSA: Adaptive LLM Gating for Multi-Agent HPC Scheduling Agents"
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/swarm-workflows/RLSA"
+authors:
+  - family-names: Jin
+    given-names: Hongwei
+    affiliation: Argonne National Laboratory
+  - family-names: Raghavan
+    given-names: Krishnan
+    affiliation: Argonne National Laboratory
+  - family-names: Mandal
+    given-names: Anirban
+    affiliation: Renaissance Computing Institute
+  - family-names: Deelman
+    given-names: Ewa
+    affiliation: University of Southern California, Information Sciences Institute
+preferred-citation:
+  type: conference-paper
+  title: "RLSA: Adaptive LLM Gating for Multi-Agent HPC Scheduling Agents"
+  authors:
+    - family-names: Jin
+      given-names: Hongwei
+    - family-names: Raghavan
+      given-names: Krishnan
+    - family-names: Mandal
+      given-names: Anirban
+    - family-names: Deelman
+      given-names: Ewa
+  collection-title: "Proceedings of the SC26 Workshops (WORKS)"
+  publisher:
+    name: IEEE
+  conference:
+    name: "SC26 Workshops"
+    city: Chicago
+    country: US
+  year: 2026

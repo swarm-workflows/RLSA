@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rlsa"
+version = "1.0.0"
+description = "RLSA: adaptive LLM gating for multi-agent HPC scheduling agents."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Hongwei Jin" }]
+keywords = ["reinforcement-learning", "hpc", "scheduling", "llm", "multi-agent", "gating"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+# Core: everything needed for the mock-bidder experiments (no GPU, no LLM).
+dependencies = [
+    "numpy>=1.24",
+    "torch>=2.0",
+    "gymnasium>=0.29",
+]
+
+[project.optional-dependencies]
+# Real HuggingFace LLM bidder (Qwen-2.5 3B/7B/14B); a GPU is needed in practice.
+hf = ["transformers>=4.40", "accelerate>=0.30"]
+# Figure regeneration, aggregation and paired statistics.
+plot = ["matplotlib>=3.7", "pandas>=2.0", "scipy>=1.10", "seaborn>=0.12"]
+# FABRIC testbed orchestration (requires a FABRIC account).
+fabric = ["fabrictestbed-extensions>=1.6"]
+# Documentation site.
+docs = ["mkdocs>=1.5", "mkdocs-material>=9.5", "mkdocstrings[python]>=0.24"]
+dev = ["pytest>=7.4", "ruff>=0.4"]
+
+[project.urls]
+Homepage = "https://github.com/swarm-workflows/RLSA"
+Documentation = "https://swarm-workflows.github.io/RLSA/"
+
+[tool.setuptools.packages.find]
+include = ["rlsa*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+extend-exclude = ["results", "site"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501", "E702", "E731"]

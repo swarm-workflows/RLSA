@@ -1,0 +1,109 @@
+{
+  "n_jobs": 200,
+  "n_agents": 4,
+  "makespan": 6389.991808630153,
+  "flow_time_mean": 3509.01474730365,
+  "flow_time_std": 1626.8713274795684,
+  "utilization": 1.3226436710803688,
+  "n_llm_calls_total": 704,
+  "llm_calls_per_job": 3.52,
+  "n_llm_calls_per_agent": {
+    "0": 177,
+    "1": 176,
+    "2": 181,
+    "3": 170
+  },
+  "wins_per_agent": {
+    "0": 166,
+    "1": 19,
+    "2": 5,
+    "3": 10
+  },
+  "bids_per_agent": {
+    "0": 200,
+    "1": 200,
+    "2": 200,
+    "3": 200
+  },
+  "bid_win_rate_per_agent": {
+    "0": 0.83,
+    "1": 0.095,
+    "2": 0.025,
+    "3": 0.05
+  },
+  "rejection_per_agent": {},
+  "jain_fairness": 0.3566079452250196,
+  "gating_selectivity_per_agent": {
+    "0": 0.30131553288832225,
+    "1": 0.3446396159903998,
+    "2": 0.3152853821345534,
+    "3": 0.24420460511512793
+  },
+  "wallclock_seconds": 61.966588258743286,
+  "stale_bids": 673,
+  "dropped_msgs": 0,
+  "bid_latency_ms_mean": 280.5681973695755,
+  "bid_latency_ms_p95": 367.1857714653015,
+  "bid_latency_ms_p99": 371.68941497802706,
+  "deadline_misses_per_agent": {
+    "0": 169,
+    "1": 167,
+    "2": 172,
+    "3": 165
+  },
+  "distributed_config": {
+    "n_agents": 4,
+    "bidder_kinds": [
+      "hf",
+      "hf",
+      "hf",
+      "hf"
+    ],
+    "per_agent_hf_models": null,
+    "bid_deadline_ms": 200.0,
+    "net_mean_ms": 2.0,
+    "net_std_ms": 0.5,
+    "net_drop_prob": 0.0,
+    "net_mean_ms_per_agent": [
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "net_std_ms_per_agent": [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "net_drop_prob_per_agent": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "sharing_mode": "ctde",
+    "tiebreak": "deterministic",
+    "freeze_policy": false,
+    "load_policy_path": "",
+    "gamma": 0.0,
+    "confidence_tau": null,
+    "cost_beta": 1.0
+  },
+  "per_model_analysis": {
+    "Qwen/Qwen2.5-7B-Instruct": {
+      "llm_latency_ms_p50": 330.75784900574945,
+      "llm_latency_ms_p95": 359.97006934776437,
+      "llm_latency_ms_p99": 389.4191623793456,
+      "invalid_rate": 0.0,
+      "bid_abserr_mean": 27.1839696103175,
+      "n_calls": 704
+    }
+  },
+  "residual_data_path": "logs/distributed_canonical_hf/policies/residdata_hf_seed3.npz",
+  "residual_data_n": 544,
+  "saved_policy_path": "logs/distributed_canonical_hf/policies/rlsa_hf_seed3.pt",
+  "bid_latency_ms_per_agent": {},
+  "algo": "rlsa",
+  "seed": 3
+}

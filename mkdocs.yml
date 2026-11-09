@@ -1,0 +1,67 @@
+site_name: RLSA
+site_description: "Adaptive LLM gating for multi-agent HPC scheduling agents"
+site_url: https://swarm-workflows.github.io/RLSA/
+repo_url: https://github.com/swarm-workflows/RLSA
+repo_name: swarm-workflows/RLSA
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2026 SWARM Team. Released under the MIT License.
+
+nav:
+  - Overview: index.md
+  - Method: method.md
+  - Results: results.md
+  - Getting started: getting-started.md
+  - Reproducing the paper: reproduce.md
+  - FABRIC deployment: fabric.md
+  - API reference: api.md
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [.]
+          options:
+            show_source: false
+            show_root_heading: true
+            members_order: source
+            docstring_style: google
+            merge_init_into_class: true

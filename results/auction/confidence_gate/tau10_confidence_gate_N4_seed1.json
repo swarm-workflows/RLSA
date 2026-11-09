@@ -1,0 +1,106 @@
+{
+  "n_jobs": 400,
+  "n_agents": 4,
+  "makespan": 7509.733229973388,
+  "flow_time_mean": 3607.6979680471436,
+  "flow_time_std": 1856.8444197182546,
+  "utilization": 1.4795396298931673,
+  "n_llm_calls_total": 1181,
+  "llm_calls_per_job": 2.9525,
+  "n_llm_calls_per_agent": {
+    "2": 300,
+    "0": 303,
+    "1": 296,
+    "3": 282
+  },
+  "wins_per_agent": {
+    "1": 47,
+    "2": 27,
+    "3": 33,
+    "0": 293
+  },
+  "bids_per_agent": {
+    "0": 400,
+    "1": 400,
+    "2": 400,
+    "3": 400
+  },
+  "bid_win_rate_per_agent": {
+    "0": 0.7325,
+    "1": 0.1175,
+    "2": 0.0675,
+    "3": 0.0825
+  },
+  "rejection_per_agent": {},
+  "jain_fairness": 0.4450576349637278,
+  "gating_selectivity_per_agent": {
+    "0": -0.0951214070087938,
+    "1": -0.2139827123919524,
+    "2": -0.21068119175744845,
+    "3": -0.23359627247670298
+  },
+  "wallclock_seconds": 2.412137031555176,
+  "stale_bids": 0,
+  "dropped_msgs": 0,
+  "bid_latency_ms_mean": 4.82986107468605,
+  "bid_latency_ms_p95": 6.123805046081543,
+  "bid_latency_ms_p99": 6.5877532958984375,
+  "deadline_misses_per_agent": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0
+  },
+  "distributed_config": {
+    "n_agents": 4,
+    "bidder_kinds": [
+      "mock",
+      "mock",
+      "mock",
+      "mock"
+    ],
+    "per_agent_hf_models": null,
+    "bid_deadline_ms": 50.0,
+    "net_mean_ms": 2.0,
+    "net_std_ms": 0.5,
+    "net_drop_prob": 0.0,
+    "net_mean_ms_per_agent": [
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "net_std_ms_per_agent": [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "net_drop_prob_per_agent": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "sharing_mode": "ctde",
+    "tiebreak": "deterministic",
+    "freeze_policy": true,
+    "load_policy_path": "logs/distributed_canonical/policies/rlsa_seed1.pt",
+    "gamma": 0.0,
+    "confidence_tau": 10.0,
+    "cost_beta": 1.0
+  },
+  "per_model_analysis": {
+    "mock": {
+      "llm_latency_ms_p50": 1986.945758135399,
+      "llm_latency_ms_p95": 2825.1844497397587,
+      "llm_latency_ms_p99": 3177.363057243397,
+      "invalid_rate": 0.0,
+      "bid_abserr_mean": 0.0,
+      "n_calls": 1181
+    }
+  },
+  "bid_latency_ms_per_agent": {},
+  "algo": "confidence_gate",
+  "seed": 1
+}

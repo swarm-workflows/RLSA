@@ -1,0 +1,60 @@
+{
+  "n_jobs": 400,
+  "n_agents": 4,
+  "makespan": 14355.416923484827,
+  "flow_time_mean": 6846.868184603305,
+  "flow_time_std": 3899.6322615090694,
+  "utilization": 0.8083216281714286,
+  "n_llm_calls_total": 260,
+  "llm_calls_per_job": 0.65,
+  "n_llm_calls_per_agent": {
+    "2": 64,
+    "1": 69,
+    "0": 65,
+    "3": 62
+  },
+  "wins_per_agent": {
+    "2": 89,
+    "1": 98,
+    "0": 122,
+    "3": 91
+  },
+  "bids_per_agent": {
+    "0": 400,
+    "3": 400,
+    "2": 400,
+    "1": 400
+  },
+  "bid_win_rate_per_agent": {
+    "0": 0.305,
+    "1": 0.245,
+    "2": 0.2225,
+    "3": 0.2275
+  },
+  "rejection_per_agent": {
+    "0": 396,
+    "1": 396,
+    "2": 396,
+    "3": 396
+  },
+  "jain_fairness": 0.9830425165888425,
+  "gating_selectivity_per_agent": {
+    "0": -0.1298428740179626,
+    "3": 0.22246639041494007,
+    "2": -0.10367539797123732,
+    "1": -0.14032287701798135
+  },
+  "wallclock_seconds": 45.98746848106384,
+  "algo": "rlsa",
+  "seed": 0,
+  "n_rounds": 400,
+  "wan_rtt_ms_p50": 26.967287063598633,
+  "wan_rtt_ms_p95": 233.84294509887695,
+  "wan_rtt_ms_p99": 278.76365184783936,
+  "round_walltime_ms_mean": 112.17277109622955,
+  "round_walltime_ms_p95": 278.1491994857788,
+  "prototype": "fabric",
+  "mode": "robustness",
+  "netem_loss_pct": 10,
+  "n_agents_run": 4
+}

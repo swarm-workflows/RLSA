@@ -1,0 +1,60 @@
+{
+  "n_jobs": 300,
+  "n_agents": 1,
+  "makespan": 5655.8079440418105,
+  "flow_time_mean": 2645.896300843402,
+  "flow_time_std": 1372.7240351205492,
+  "utilization": 1.4908375345218075,
+  "n_llm_calls_total": 202,
+  "llm_calls_per_job": 0.6733333333333333,
+  "n_llm_calls_per_agent": {
+    "0": 202
+  },
+  "wins_per_agent": {
+    "0": 300
+  },
+  "bids_per_agent": {
+    "0": 300
+  },
+  "bid_win_rate_per_agent": {
+    "0": 1.0
+  },
+  "rejection_per_agent": {},
+  "jain_fairness": 1.0,
+  "gating_selectivity_per_agent": {
+    "0": -0.08354048378315315
+  },
+  "wallclock_seconds": 66.71952390670776,
+  "stale_bids": 1,
+  "dropped_msgs": 0,
+  "bid_latency_ms_mean": 8.639039993286133,
+  "bid_latency_ms_p95": 5.7198405265808105,
+  "bid_latency_ms_p99": 6.12279653549194,
+  "deadline_misses_per_agent": {
+    "0": 1
+  },
+  "distributed_config": {
+    "n_agents": 1,
+    "bidder_kinds": [
+      "mock"
+    ],
+    "per_agent_hf_models": null,
+    "bid_deadline_ms": 50.0,
+    "net_mean_ms": 2.0,
+    "net_std_ms": 0.5,
+    "net_drop_prob": 0.0,
+    "net_mean_ms_per_agent": [
+      2.0
+    ],
+    "net_std_ms_per_agent": [
+      0.5
+    ],
+    "net_drop_prob_per_agent": [
+      0.0
+    ],
+    "sharing_mode": "ctde"
+  },
+  "bid_latency_ms_per_agent": {},
+  "algo": "rlsa",
+  "seed": 0
+}

@@ -1,0 +1,90 @@
+{
+  "n_jobs": 300,
+  "n_agents": 4,
+  "makespan": 5841.518691250106,
+  "flow_time_mean": 2808.639797676651,
+  "flow_time_std": 1476.4759406216276,
+  "utilization": 1.4288179598026793,
+  "n_llm_calls_total": 788,
+  "llm_calls_per_job": 2.6266666666666665,
+  "n_llm_calls_per_agent": {
+    "0": 197,
+    "1": 195,
+    "2": 198,
+    "3": 198
+  },
+  "wins_per_agent": {
+    "0": 188,
+    "1": 46,
+    "3": 32,
+    "2": 34
+  },
+  "bids_per_agent": {
+    "0": 300,
+    "1": 300,
+    "2": 300,
+    "3": 300
+  },
+  "bid_win_rate_per_agent": {
+    "0": 0.6266666666666667,
+    "1": 0.15333333333333332,
+    "2": 0.11333333333333333,
+    "3": 0.10666666666666667
+  },
+  "rejection_per_agent": {},
+  "jain_fairness": 0.5676084762865792,
+  "gating_selectivity_per_agent": {
+    "0": 0.12063956266180734,
+    "1": 0.049796553295036614,
+    "2": 0.08939388215424615,
+    "3": 0.0988948766097401
+  },
+  "wallclock_seconds": 2.1864285469055176,
+  "stale_bids": 3,
+  "dropped_msgs": 0,
+  "bid_latency_ms_mean": 5.107007225354512,
+  "bid_latency_ms_p95": 6.214475631713867,
+  "bid_latency_ms_p99": 6.842553615570068,
+  "deadline_misses_per_agent": {
+    "0": 1,
+    "1": 1,
+    "2": 0,
+    "3": 1
+  },
+  "distributed_config": {
+    "n_agents": 4,
+    "bidder_kinds": [
+      "mock",
+      "mock",
+      "mock",
+      "mock"
+    ],
+    "per_agent_hf_models": null,
+    "bid_deadline_ms": 50.0,
+    "net_mean_ms": 2.0,
+    "net_std_ms": 0.5,
+    "net_drop_prob": 0.0,
+    "net_mean_ms_per_agent": [
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "net_std_ms_per_agent": [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "net_drop_prob_per_agent": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "sharing_mode": "ctde"
+  },
+  "bid_latency_ms_per_agent": {},
+  "algo": "rlsa",
+  "seed": 1
+}
