@@ -10,8 +10,8 @@ dist/
 venv/
 
 # Outputs that the scripts regenerate (released results live in results/)
-figures/
-runs/
+/figures/
+/runs/
 rlsa_min.tar.gz
 
 # Documentation build
