@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Outputs that the scripts regenerate (released results live in results/)
+figures/
+runs/
+rlsa_min.tar.gz
+
+# Documentation build
+site/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
