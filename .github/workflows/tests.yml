@@ -1,0 +1,31 @@
+name: tests
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -e ".[plot,dev]"
+      - name: Lint
+        run: ruff check .
+      - name: Tests
+        run: pytest
+      - name: Regenerate figures and tables from results/
+        env:
+          RLSA_USETEX: "0"
+        run: bash experiments/reproduce/make_figures.sh
